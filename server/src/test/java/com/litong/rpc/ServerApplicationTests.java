@@ -1,6 +1,6 @@
-package com.litong.rpc.server;
+package com.litong.rpc;
 
-import com.litong.rpc.server.request.ServerRequest;
+import com.litong.rpc.request.ServerRequest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
