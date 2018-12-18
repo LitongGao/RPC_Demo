@@ -1,8 +1,7 @@
-package com.litong.rpc.client.test;
+package com.litong.rpc.test;
 
-import com.litong.rpc.client.info.RpcInfo;
+import com.litong.rpc.info.RpcInfo;
 
-import javax.annotation.Resource;
 import java.io.IOException;
 import java.net.Socket;
 
