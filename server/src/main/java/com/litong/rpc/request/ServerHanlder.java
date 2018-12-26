@@ -3,6 +3,7 @@ package com.litong.rpc.request;
 import com.litong.rpc.info.RpcInfo;
 
 import java.io.ObjectInputStream;
+import java.lang.reflect.Method;
 import java.net.Socket;
 
 public class ServerHanlder implements Runnable {
@@ -23,6 +24,8 @@ public class ServerHanlder implements Runnable {
                 classes[i] = rpcInfo.getParams()[i].getClass();
             }
             System.out.println("from server:"+rpcInfo.getMethodName());
+            Method method = clazz.getMethod(rpcInfo.getMethodName(),classes);
+            method.invoke(clazz.newInstance(),rpcInfo.getParams());
         } catch (Exception e) {
             e.printStackTrace();
         }
