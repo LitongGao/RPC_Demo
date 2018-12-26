@@ -17,7 +17,7 @@ public class ClientApplicationTests {
 	@Test
 	public void contextLoads() {
 		RpcInfo rpcInfo = new RpcInfo();
-		rpcInfo.setPackageName("com.litong.rpc.server.dao");
+		rpcInfo.setPackageName("com.litong.rpc.dao");
 		rpcInfo.setClazzName("OrderDao");
 		rpcInfo.setMethodName("getOrderById");
 		Object[] objects = new Object[]{"temp1"};
